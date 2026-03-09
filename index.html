@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Catálogo Digital-Tienda Online KitchenAid</title>
+</head>
+
+<body>
+
+    <!-- HEADER para mostrar el nombre de la tienda -->
+    <header>
+        <h1>KitchenAid</h1>
+        <h2>Catálogo Digital</h2>
+        <p>Tienda Online de Electrodomésticos</p>
+
+        <!-- Navegación simple -->
+        <!-- Esta etiqueta se agregó como mejora sugerida en la actividad -->
+        <nav>
+            <a href="#">Inicio</a> |
+            <a href="#">Productos</a> |
+            <a href="#">Contacto</a>
+        </nav>
+    </header>
+
+
+    <!-- Sección de Introducción -->
+    <section>
+        <h2>Bienvenidos a nuestra tienda en línea</h2>
+        <p>Encuentra los mejores productos electrónicos con excelente calidad y precio.</p>
+    </section>
+
+
+    <!-- Sección Producto Destacado -->
+    <section>
+        <h2>Producto Destacado</h2>
+
+        <!-- Figure agrupa imagen y descripción -->
+        <figure>
+            <img src="img/batidora.jpg" alt="Batidora eléctrica KitchenAid" width="300">
+            <figcaption>Batidora eléctrica profesional KitchenAid de 5 velocidades.</figcaption>
+        </figure>
+
+        <!-- Lista de características del producto -->
+        <ul>
+            <li>Alta potencia</li>
+            <li>5 velocidades</li>
+            <li>Garantía de 2 años</li>
+        </ul>
+
+        <!-- Botón de compra -->
+        <button>Agregar al carrito</button>
+
+    </section>
+
+
+    <!-- Sección Tabla de Productos -->
+    <section>
+        <h2>Lista de Productos</h2>
+
+        <!-- Tabla de productos -->
+        <table border="1">
+            <tr>
+                <th>Producto</th>
+                <th>Categoría</th>
+                <th>Precio</th>
+                <th>Disponibilidad</th>
+            </tr>
+
+            <tr>
+                <td>Batidora</td>
+                <td>Electrodomésticos</td>
+                <td>$1,200</td>
+                <td>Disponible</td>
+            </tr>
+
+            <tr>
+                <td>Licuadora</td>
+                <td>Electrodomésticos</td>
+                <td>$900</td>
+                <td>Disponible</td>
+            </tr>
+
+            <tr>
+                <td>Cafetera</td>
+                <td>Cocina</td>
+                <td>$1,500</td>
+                <td>Agotado</td>
+            </tr>
+        </table>
+    </section>
+
+
+    <!-- Sección Multimedia -->
+    <!-- Video del producto -->
+    <section>
+        <h2>Demostración del Producto</h2>
+
+        <!-- Video -->
+        <video width="500" controls>
+            <source src="video/videobatidora.mp4" type="video/mp4">
+            Tu navegador no soporta el video.
+        </video>
+        <!-- Audio del producto -->
+        <h2>Audio Promocional</h2>
+
+        <!-- Audio -->
+        <audio controls>
+            <source src="audio/audiopromo.mp3" type="audio/mpeg">
+            Tu navegador no soporta el audio.
+        </audio>
+    </section>
+
+
+    <!-- Formulario como mejora -->
+    <section>
+        <h2>Buscar producto</h2>
+
+        <form>
+            <input type="text" placeholder="Buscar producto">
+            <button>Buscar</button>
+        </form>
+ <!-- Formulario de contacto -->
+        <h3>Formulario de contacto</h3>
+
+        <p id="mensaje-envio" style="display:none;">¡Gracias! Tu mensaje fue enviado correctamente.</p>
+
+        <form action="https://formspree.io/f/xqeyabye" method="POST" enctype="multipart/form-data">
+            <!-- Formulario que envía datos a Formspree usando método POST -->
+            <form id="contacto-form" action="#" method="post">
+
+                <label for="nombre">Nombre:</label><br>
+                <input type="text" id="nombre" name="nombre" required minlength="3"><br><br>
+
+                <label for="email">Correo electrónico:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="mensaje">Mensaje:</label><br>
+                <textarea id="mensaje" name="mensaje" required></textarea><br><br>
+
+                <label for="pais">País:</label><br>
+                <select id="pais" name="pais">
+                    <option value="mx">México</option>
+                    <option value="ar">Argentina</option>
+                    <option value="es">España</option>
+                </select><br><br>
+
+                <label>Género:</label><br>
+                <input type="radio" name="genero" value="F" id="femenino">
+                <label for="femenino">Femenino</label>
+                <input type="radio" name="genero" value="M" id="masculino">
+                <label for="masculino">Masculino</label>
+                <input type="radio" name="genero" value="O" id="otro">
+                <label for="otro">Otro</label><br><br>
+
+                <label>Intereses:</label><br>
+                <input type="checkbox" name="intereses" value="coleccion" id="col">
+                <label for="col">Compras</label><br>
+                <input type="checkbox" name="intereses" value="eventos" id="eve">
+                <label for="eve">Nuevos productos</label><br>
+                <input type="checkbox" name="intereses" value="descuentos" id="des">
+                <label for="des">Descuentos</label><br><br>
+
+                <button type="submit">Enviar</button>
+                <button type="reset">Limpiar</button>
+
+            </form>
+    </section>
+
+
+    <!-- Footer con información de contacto -->
+    <footer>
+        <h3>Puedes contactarnos en: </h3>
+
+        <p>Contacto: <a href="mailto:kitchenAid@gmail.com">kitchenAid@gmail.com</a></p>
+        <p>Teléfono: 7713323857</p>
+        <a href="https://wa.me/7713323857" target="_blank">
+            <a href="https://wa.me/7713323857" target="_blank">
+                <img src="img/Whatsapp.gif" alt="WhatsApp" width="100">
+            </a>
+            <p>© 2025 KitchenAid </p>
+
+    </footer>
+
+
+    <!-- Comentario personal -->
+    <!-- Lo que entendí: Este código crea una página web de catálogo digital para una tienda llamada KitchenAid.
+         La página tiene diferentes secciones donde se muestran productos usando imágenes, tablas y multimedia
+         como video y audio. También se agregan mejoras como navegación, lista de características, botón de
+         compra y un formulario de búsqueda para mejorar la experiencia del usuario. -->
+
+    <!-- Nota: Realice mejoras como  formulario y botón fueron agregadas con apoyo de IA
+         para enriquecer el sitio web según las indicaciones de la actividad.-->
+
+</body>
+
+</html>
